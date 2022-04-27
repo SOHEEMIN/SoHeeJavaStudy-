@@ -39,4 +39,12 @@ public class Student {
 		this.studentMajor = studentMajor;
 	}
 
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", studentNumber=" + studentNumber + ", studentName=" + studentName
+				+ ", studentMajor=" + studentMajor + "]";
+	}
+	
+	
+
 }

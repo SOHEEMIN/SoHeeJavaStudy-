@@ -32,7 +32,8 @@ public class StudentMain {
 		List<Student> studentList = new ArrayList<>();
 		studentList.add(student2);
 		// get
-		System.out.println(studentList.get(0));
+		System.out.println("객체출력: " + student2);
+		System.out.println("리스트 객체만 출력:" + studentList.get(0));
 		// 0번 인덱스에 담긴 Student 객체의 id 값을 출력한다면
 		System.out.println(studentList.get(0).getId());
 		System.out.println(studentList.get(0).getStudentNumber());
@@ -43,16 +44,19 @@ public class StudentMain {
 		student3.setStudentName("학생3");
 		student3.setStudentMajor("전자공학");
 		studentList.add(student3);
-		
-		//for문을 이용해서 studentList에 담긴 모든 학생의 이름만 출력
+
+		// for문을 이용해서 studentList에 담긴 모든 학생의 이름만 출력
 		for (int i = 0; i < studentList.size(); i++) {
 			System.out.println(studentList.get(i).getStudentName());
 		}
-		//for each 사용
-		for(Student stu: studentList) {
+		// for each 사용
+		for (Student stu : studentList) {
 			System.out.println(stu.getStudentName());
 		}
-		
+		// 배열을 사용
+		Student[] stuArray = new Student[10];
+		stuArray[0] = student1;
+
 	}
 
 }
