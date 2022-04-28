@@ -6,9 +6,10 @@ public class HumanDTO {
 	private String name;
 	private int age;
 
-	HumanDTO(){
-		
+	HumanDTO() {
+
 	}
+
 	public HumanDTO(Long id, String name, int age) {
 		this.id = id;
 		this.name = name;
