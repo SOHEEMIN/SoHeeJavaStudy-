@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Scanner;
+// java.util.*;
 
 public class PostService {
 
@@ -37,7 +38,7 @@ public class PostService {
 	}
 
 	public void findAll() {
-		System.out.println("글 목록");
+		System.out.println("글 목록");  
 		List<PostDTO> postList = pr.findAll();
 		for (PostDTO p : postList) {
 			System.out.println(p);
@@ -49,12 +50,12 @@ public class PostService {
 		System.out.println("글 조회");
 		System.out.println("조회할 글 번호 입력:");
 		Long findId = scan.nextLong();
-		PostDTO post = pr.findById(findId);
+		int plus = 0;
+		PostDTO post = pr.findById(findId, plus);
 		if (post == null) {
 			System.out.println("조회결과가 없습니다.");
 		} else {
 			System.out.println(post);
-
 		}
 	}
 
@@ -77,4 +78,19 @@ public class PostService {
 		}
 	}
 
+	public void search() {
+		System.out.println("글쓴이 닉네임 검색: ");
+		String writer = scan.next();
+		PostDTO post = pr.search(writer);
+		if (post == null) {
+			System.out.println("잘못 입력하셨습니다.");
+
+		}
+	}
+	public void delete() {
+		System.out.println("삭제할 글번호 입력: ");
+		Long deletdId = scan.nextLong();
+		pr.delete(deletdId);
+		findAll();
+	}
 }

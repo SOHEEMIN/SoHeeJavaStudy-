@@ -1,4 +1,5 @@
-package day31_20220429_01;
+package day31_20220429_02;
+
 
 public class PostDTO {
 	private Long id;
@@ -7,10 +8,10 @@ public class PostDTO {
 	private String postPass;
 	private String postContents;
 	private int postHits = 0;
-	//객체를 만들 때 초기값을 줄 수 있다.
-	String postDate;
+	private String postDate;
 
-	PostDTO() {
+	public PostDTO() {
+
 	}
 
 	public PostDTO(Long id, String postTitle, String postWriter, String postPass, String postContents, int postHits,

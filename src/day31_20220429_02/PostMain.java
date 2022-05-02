@@ -1,15 +1,14 @@
-package day31_20220429_01;
+package day31_20220429_02;
 
 import java.util.Scanner;
 
 public class PostMain {
 
 	public static void main(String[] args) {
-		PostService ps = new PostService();
 		Scanner scan = new Scanner(System.in);
 		boolean run = true;
 		int selectNumber = 0;
-
+		PostService ps = new PostService();
 		while (run) {
 			System.out.println("-----------------------------------------------------------------------");
 			System.out.println("1.글작성 | 2.글목록 | 3.글조회 | 4.글수정 | 5.글검색 | 6.글삭제 | 7.종료");
@@ -29,12 +28,9 @@ public class PostMain {
 			} else if (selectNumber == 6) {
 				ps.delete();
 			} else if (selectNumber == 7) {
-				System.out.println("시스템을 종료합니다.");
 				break;
 			}
-
 		}
-
 	}
 
 }
