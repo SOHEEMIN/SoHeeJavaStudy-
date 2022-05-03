@@ -17,7 +17,6 @@ public class MemberMain {
 			selectNumber = scan.nextInt();
 			if (selectNumber == 1) {
 				ms.save();
-//				MemberService.save();
 			} else if (selectNumber == 2) {
 				ms.login();
 			} else if (selectNumber == 3) {
