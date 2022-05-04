@@ -31,6 +31,12 @@ public class MemberService {
 		} else {
 			System.out.println("가입이 거절되었습니다.");
 		}
+//		선생님이 하신 save메서드 소스
+//		if (mr.save(newMember) == null) {
+//			System.out.println("가입을 축하합니다^^");
+//		} else {
+//			System.out.println("가입이 거절되었습니다.");
+//		}
 	}
 
 	public void login() {

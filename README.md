@@ -14,3 +14,14 @@ https://www.notion.so/
 ### 20220427
 **배운 것 요약: DTO클래스의 toString 설정 / 클래스 기본 세트 / 클래스 구조 (Main, DTO, Repository, Service) / 클래스 구조의 흐름 / 예제를 통한 DTO, Main, Repository, Service Class 익히기**
 - point. 모든 클래스는 데이터 타입이 될 수 있다!!
+
+### 20220429
+**배운 것 요약: DTO / Main / Service / Repository 클래스를 사용한 회원관리 예제 게시판관리 예제 풀기**
+
+### 20220502
+**배운 것 요약: 은행거래시스템을 활용한 예제 풀어보기**
+- point. 되도록이면 하나의 메서드는 하나의 기능만 하게!
+- point. Repisotory메서드마다 주석으로 매개변수타입 / 매개변수의 이름 / 리턴타입 / 매서드이름을 적어, 보다 빨리 습득할 수 있도록 하자!
+
+### 20220503
+**배운 것 요약: Map이란?, Student클래스를 생성하여 간단한 Map예제 풀기, 4월 28일에 진행한 Member package를 활용하여, list를 map으로 바꿔 출력해보기**

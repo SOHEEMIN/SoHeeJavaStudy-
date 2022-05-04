@@ -1,22 +1,25 @@
 package day32_20220502_01;
 
+
 public class ClientDTO {
+
 	private Long id;
 	private String clientName;
-	private int clientPass;
-	private String clientCreateDate;
-	private int balance = 0;
-	private int accountNumber;
+	private String clientPass;
+	private String clientCreatedDate;
+	private long balance;
+	private String accountNumber;
 
-	ClientDTO() {
+	public ClientDTO() {
+
 	}
 
-	public ClientDTO(Long id, String clientName, int clientPass, String clientCreateDate, int balance,
-			int accountNumber) {
+	public ClientDTO(Long id, String clientName, String clientPass, String clientCreatedDate, long balance,
+			String accountNumber) {
 		this.id = id;
 		this.clientName = clientName;
 		this.clientPass = clientPass;
-		this.clientCreateDate = clientCreateDate;
+		this.clientCreatedDate = clientCreatedDate;
 		this.balance = balance;
 		this.accountNumber = accountNumber;
 	}
@@ -37,43 +40,43 @@ public class ClientDTO {
 		this.clientName = clientName;
 	}
 
-	public int getClientPass() {
+	public String getClientPass() {
 		return clientPass;
 	}
 
-	public void setClientPass(int clientPass) {
+	public void setClientPass(String clientPass) {
 		this.clientPass = clientPass;
 	}
 
-	public String getClientCreateDate() {
-		return clientCreateDate;
+	public String getClientCreatedDate() {
+		return clientCreatedDate;
 	}
 
-	public void setClientCreateDate(String clientCreateDate) {
-		this.clientCreateDate = clientCreateDate;
+	public void setClientCreatedDate(String clientCreatedDate) {
+		this.clientCreatedDate = clientCreatedDate;
 	}
 
-	public int getBalance() {
+	public long getBalance() {
 		return balance;
 	}
 
-	public void setBalance(int balance) {
+	public void setBalance(long balance) {
 		this.balance = balance;
 	}
 
-	public int getAccountNumber() {
+	public String getAccountNumber() {
 		return accountNumber;
 	}
 
-	public void setAccountNumber(int accountNumber) {
+	public void setAccountNumber(String accountNumber) {
 		this.accountNumber = accountNumber;
 	}
 
 	@Override
 	public String toString() {
 		return "ClientDTO [id=" + id + ", clientName=" + clientName + ", clientPass=" + clientPass
-				+ ", clientCreateDate=" + clientCreateDate + ", balance=" + balance + ", accountNumber=" + accountNumber
-				+ "]";
+				+ ", clientCreatedDate=" + clientCreatedDate + ", balance=" + balance + ", accountNumber="
+				+ accountNumber + "]";
 	}
 
 }

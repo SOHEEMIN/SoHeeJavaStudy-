@@ -5,12 +5,18 @@ import java.util.Map;
 
 public class MemberRepository {
 	static Map<Long, MemberDTO> memberMap = new HashMap<>();
-
+	
+	
+//	선생님이 하신 save메서드 소스
+//	public MemberDTO save(MemberDTO newMember) {
+//		return memberMap.put(newMember.getId(), newMember);
+//	}
+	
 	public boolean save(MemberDTO newMember, Long id) {
 		memberMap.put(id, newMember);
 		return true;
 	}
-
+	//
 	public boolean login(String memberId, String memberPassword) {
 		boolean result = false;
 		for (Long m : memberMap.keySet()) {
