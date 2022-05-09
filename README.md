@@ -25,7 +25,4 @@ https://www.notion.so/
 
 ### 20220503
 **배운 것 요약: Map이란?, Student클래스를 생성하여 간단한 Map예제 풀기, 4월 28일에 진행한 Member package를 활용하여, list를 map으로 바꿔 출력해보기**
-<<<<<<< HEAD
-=======
 
->>>>>>> 551f7bb42e51e42dddbed8334eadf8d737184170
